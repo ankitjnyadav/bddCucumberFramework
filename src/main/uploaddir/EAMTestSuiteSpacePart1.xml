@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applicationDefinition xmlns="http://www.micropact.com/entellitrak" binding-version="importExportBinding1">
+    <tracking-config entellitrak-version="-1.-1 #TEXT# (revision 347)" binding-version="1">
+        <business-key>etk.app</business-key>
+        <name>Entellitrak Test Automation Site</name>
+        <description>My description</description>
+        <applicationVersion>Ver 3.26</applicationVersion>
+        <beanshellEnabled>true</beanshellEnabled>
+        <javaEnabled>true</javaEnabled>
+        <groovyEnabled>true</groovyEnabled>
+        <config-version>7</config-version>
+        <current-theme>theme.default</current-theme>
+        <lookups>
+            <lookup>
+                <business-key>lookup.lookupwithleadingandtrailingspaces</business-key>
+                <name> LookupWithLeadingAndTrailingSpaces </name>
+                <description> LookupWithLeadingAndTrailingSpaces </description>
+                <type>Data Object</type>
+                <data-object>object.dataobjectfoream</data-object>
+                <display-element>object.dataobjectfoream.element.eamDataElement</display-element>
+            </lookup>
+        </lookups>
+        <data-objects>
+            <data-object>
+                <business-key>object.dataobjectfoream</business-key>
+                <name>DataObjectForEAM</name>
+                <description>DataObjectForEAM</description>
+                <table-name>T_DATAOBJECTFOREAM</table-name>
+                <object-name>Dataobjectfoream</object-name>
+                <applied-changes>true</applied-changes>
+                <list-style>1</list-style>
+                <default-form>object.dataobjectfoream.form.dataobjectforeamDefaultForm</default-form>
+                <default-view>object.dataobjectfoream.view.dataobjectforeamDefaultView</default-view>
+                <object-type>1</object-type>
+                <label>DataObjectForEAM</label>
+                <cardinality>-1</cardinality>
+                <designator>5</designator>
+                <data-elements>
+                    <data-element>
+                        <business-key>object.dataobjectfoream.element.eamDataElement</business-key>
+                        <name>EAM Data Element</name>
+                        <description>EAM Data Element</description>
+                        <type>text</type>
+                        <business-required>no</business-required>
+                        <column-name>C_EAM_DATA_ELEMENT</column-name>
+                        <property-name>eamDataElement</property-name>
+                        <size>50</size>
+                        <applied-changes>true</applied-changes>
+                    </data-element>
+                    <data-element>
+                        <business-key>object.dataobjectfoream.element.state</business-key>
+                        <name>State</name>
+                        <description>Workflow Business Process State</description>
+                        <type>state</type>
+                        <business-required>no</business-required>
+                        <column-name>ID_WORKFLOW</column-name>
+                        <property-name>State</property-name>
+                        <applied-changes>true</applied-changes>
+                        <system-field>true</system-field>
+                    </data-element>
+                </data-elements>
+                <data-event-listeners/>
+                <filter-handlers/>
+                <data-forms>
+                    <data-form>
+                        <business-key>object.dataobjectfoream.form.dataobjectforeamDefaultForm</business-key>
+                        <name>DataObjectForEAM Default Form</name>
+                        <description>Default form for DataObjectForEAM</description>
+                        <title>DataObjectForEAM</title>
+                        <default-form>true</default-form>
+                        <search-form>true</search-form>
+                        <spell-check-enabled>true</spell-check-enabled>
+                        <layout-type>stack</layout-type>
+                        <form-controls>
+                            <text>
+                                <business-key>object.dataobjectfoream.form.dataobjectforeamDefaultForm.control.eamdataelement</business-key>
+                                <name>eamDataElement</name>
+                                <description>EAM Data Element form control</description>
+                                <data-element>object.dataobjectfoream.element.eamDataElement</data-element>
+                                <display-order>1</display-order>
+                                <label>EAM Data Element</label>
+                            </text>
+                        </form-controls>
+                    </data-form>
+                    <data-form>
+                        <business-key>object.dataobjectfoream.form.dataformwithleadingandtrailingspaces</business-key>
+                        <name> DataFormWithLeadingAndTrailingSpaces </name>
+                        <description> DataFormWithLeadingAndTrailingSpaces </description>
+                        <spell-check-enabled>true</spell-check-enabled>
+                        <layout-type>stack</layout-type>
+                    </data-form>
+                </data-forms>
+                <data-views>
+                    <data-view>
+                        <business-key>object.dataobjectfoream.view.dataviewwithleadingandtrailingspaces</business-key>
+                        <name> DataViewWithLeadingAndTrailingSpaces </name>
+                        <description> DataViewWithLeadingAndTrailingSpaces </description>
+                    </data-view>
+                    <data-view>
+                        <business-key>object.dataobjectfoream.view.dataobjectforeamDefaultView</business-key>
+                        <name>DataObjectForEAM Default View</name>
+                        <description>DataObjectForEAM Listing</description>
+                        <title>DataObjectForEAM Listing</title>
+                        <default-view>true</default-view>
+                        <search-view>true</search-view>
+                        <data-view-elements>
+                            <data-view-element>
+                                <business-key>object.dataobjectfoream.view.dataobjectforeamDefaultView.element.state</business-key>
+                                <name>State</name>
+                                <description>State column.</description>
+                                <data-element>object.dataobjectfoream.element.state</data-element>
+                                <label>State</label>
+                                <responsivenessFactor>1</responsivenessFactor>
+                            </data-view-element>
+                            <data-view-element>
+                                <business-key>object.dataobjectfoream.view.dataobjectforeamDefaultView.element.eamdataelement</business-key>
+                                <name>eamDataElement</name>
+                                <description>EAM Data Element column.</description>
+                                <data-element>object.dataobjectfoream.element.eamDataElement</data-element>
+                                <display-order>1</display-order>
+                                <label>EAM Data Element</label>
+                                <responsivenessFactor>1</responsivenessFactor>
+                            </data-view-element>
+                        </data-view-elements>
+                    </data-view>
+                </data-views>
+            </data-object>
+        </data-objects>
+        <packages>
+            <package>
+                <business-key>package.script.6f5aa753-c460-4f8f-abcc-cb0d52c61401</business-key>
+                <name>Script</name>
+                <type>standard</type>
+            </package>
+        </packages>
+        <scripts>
+            <script>
+                <package>package.script.6f5aa753-c460-4f8f-abcc-cb0d52c61401</package>
+                <business-key>script.scriptobject.af9c5906-d66d-4a80-9203-4082cebc1ecc</business-key>
+                <name>ScriptObject</name>
+                <description>ScriptObject</description>
+                <code>/**
+ *
+ * ScriptObject
+ *
+ * administrator 09/08/2017
+ **/
+
+package Script;
+
+import com.entellitrak.ApplicationException;
+import com.entellitrak.scheduler.JobHandler;
+import com.entellitrak.scheduler.SchedulerExecutionContext;
+
+public class ScriptObject implements JobHandler {
+
+    public void execute(SchedulerExecutionContext etk) throws ApplicationException {
+
+        // TODO
+
+    }
+
+}
+</code>
+                <type>java</type>
+                <handlerType>JobHandler</handlerType>
+            </script>
+        </scripts>
+    </tracking-config>
+    <roles>
+        <role>
+            <name>Administrator</name>
+            <business-key>role.administration</business-key>
+            <description>Role with administration permissions.</description>
+            <profile/>
+            <system-permissions>
+                <permission>permission</permission>
+            </system-permissions>
+            <data-permissions/>
+        </role>
+    </roles>
+    <groups>
+        <group>
+            <name>System Administrators</name>
+            <business-key>group.systemAdministrators</business-key>
+            <description>Group of system administrators.</description>
+            <subject-roles/>
+            <subject-preferences/>
+        </group>
+    </groups>
+    <pages/>
+    <reports/>
+    <jobs>
+        <customJob>
+            <script-object-key>script.scriptobject.af9c5906-d66d-4a80-9203-4082cebc1ecc</script-object-key>
+            <name> CustomJobsWithLeadingAndTrailingSpaces </name>
+            <business-key>custom</business-key>
+            <description> CustomJobsWithLeadingAndTrailingSpaces </description>
+            <trigger-type>CronTrigger</trigger-type>
+            <cron-trigger-type>yearly</cron-trigger-type>
+            <cron-trigger-expression>0 0 8 1 1 ? *</cron-trigger-expression>
+            <repeat-unit>SECOND</repeat-unit>
+            <active>true</active>
+            <suspend-on-error>false</suspend-on-error>
+            <application-definition>true</application-definition>
+        </customJob>
+        <systemJob>
+            <job-type-key>etk.job.simple.workflow.archive</job-type-key>
+            <name>System Maintenance (Archive Workflows)</name>
+            <business-key>com.entellitrak.job.simpleArchiveSystemMaintenance</business-key>
+            <description>System maintenance job scheduled to be run every morning at 1:15am to archive Workflows</description>
+            <trigger-type>CronTrigger</trigger-type>
+            <cron-trigger-type>custom</cron-trigger-type>
+            <cron-trigger-expression>0 15 1 ? * *</cron-trigger-expression>
+            <active>true</active>
+            <suspend-on-error>false</suspend-on-error>
+            <application-definition>false</application-definition>
+        </systemJob>
+        <systemJob>
+            <job-type-key>etk.job.simple.workitem.cleanup</job-type-key>
+            <name>System Maintenance (Cleanup deleted Workflows)</name>
+            <business-key>com.entellitrak.job.simpleCleanupSystemMaintenance</business-key>
+            <description>System maintenance job scheduled to be run every Saturday morning at 1:30am to cleanup deleted Workflows</description>
+            <trigger-type>CronTrigger</trigger-type>
+            <cron-trigger-type>custom</cron-trigger-type>
+            <cron-trigger-expression>0 30 1 ? * SAT</cron-trigger-expression>
+            <active>true</active>
+            <suspend-on-error>false</suspend-on-error>
+            <application-definition>false</application-definition>
+        </systemJob>
+        <systemJob>
+            <job-type-key>etk.job.cfg.cleanup</job-type-key>
+            <name>System Maintenance (Remove Previous Configurations)</name>
+            <business-key>com.entellitrak.job.trackingConfigCleanup</business-key>
+            <description>System maintenance job scheduled to be run every morning at 2:00am to clean up previously deployed configurations</description>
+            <trigger-type>CronTrigger</trigger-type>
+            <cron-trigger-type>custom</cron-trigger-type>
+            <cron-trigger-expression>0 0 2 ? * *</cron-trigger-expression>
+            <active>true</active>
+            <suspend-on-error>false</suspend-on-error>
+            <application-definition>false</application-definition>
+        </systemJob>
+        <systemJob>
+            <job-type-key>etk.job.cfg.cleanup</job-type-key>
+            <name> SystemJobsWithLeadingAndTrailingSpaces </name>
+            <business-key>system</business-key>
+            <description>SystemJobsWithLeadingAndTrailingSpaces</description>
+            <trigger-type>CronTrigger</trigger-type>
+            <cron-trigger-type>yearly</cron-trigger-type>
+            <cron-trigger-expression>0 0 8 1 1 ? *</cron-trigger-expression>
+            <repeat-unit>SECOND</repeat-unit>
+            <active>true</active>
+            <suspend-on-error>false</suspend-on-error>
+            <application-definition>true</application-definition>
+        </systemJob>
+    </jobs>
+    <systemEventListeners/>
+</applicationDefinition>

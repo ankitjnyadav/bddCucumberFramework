@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applicationDefinition xmlns="http://www.micropact.com/entellitrak" binding-version="importExportBinding1">
+    <tracking-config entellitrak-version="-1.-1 #TEXT# (revision 347)" binding-version="1">
+        <business-key>etk.app</business-key>
+        <name>ETK-3.27.00</name>
+        <description>ETK-3.27.00</description>
+        <applicationVersion>ETK-3.27.00</applicationVersion>
+        <beanshellEnabled>true</beanshellEnabled>
+        <javaEnabled>true</javaEnabled>
+        <groovyEnabled>true</groovyEnabled>
+        <config-version>9</config-version>
+        <current-theme>theme.default</current-theme>
+        <data-objects>
+            <data-object>
+                <business-key>object.dataobject2foream</business-key>
+                <name>DataObject2ForEAM</name>
+                <description>DataObject2ForEAM</description>
+                <table-name>T_DATAOBJECT2FOREAM</table-name>
+                <object-name>Dataobject2foream</object-name>
+                <applied-changes>true</applied-changes>
+                <list-style>1</list-style>
+                <default-form>object.dataobject2foream.form.dataobject2foreamDefaultForm</default-form>
+                <default-view>object.dataobject2foream.view.dataobject2foreamDefaultView</default-view>
+                <object-type>1</object-type>
+                <label>DataObject2ForEAM</label>
+                <cardinality>-1</cardinality>
+                <designator>5</designator>
+                <data-elements>
+                    <data-element>
+                        <business-key>object.dataobject2foream.element.state</business-key>
+                        <name>State</name>
+                        <description>Workflow Business Process State</description>
+                        <type>state</type>
+                        <business-required>no</business-required>
+                        <column-name>ID_WORKFLOW</column-name>
+                        <property-name>State</property-name>
+                        <applied-changes>true</applied-changes>
+                        <system-field>true</system-field>
+                    </data-element>
+                    <data-element>
+                        <business-key>object.dataobject2foream.element.dataobject2foream</business-key>
+                        <name>DataObject2ForEAM</name>
+                        <description>Data Element</description>
+                        <type>text</type>
+                        <business-required>no</business-required>
+                        <column-name>C_DATAOBJECT2FOREAM</column-name>
+                        <property-name>dataobject2foream</property-name>
+                        <size>50</size>
+                        <applied-changes>true</applied-changes>
+                    </data-element>
+                </data-elements>
+                <data-event-listeners/>
+                <filter-handlers/>
+                <data-forms>
+                    <data-form>
+                        <business-key>object.dataobject2foream.form.dataobject2foreamDefaultForm</business-key>
+                        <name>DataObject2ForEAM Default Form</name>
+                        <description>Default form for DataObject2ForEAM</description>
+                        <title>DataObject2ForEAM</title>
+                        <default-form>true</default-form>
+                        <search-form>true</search-form>
+                        <spell-check-enabled>true</spell-check-enabled>
+                        <layout-type>stack</layout-type>
+                        <form-controls>
+                            <text>
+                                <business-key>object.dataobject2foream.form.dataobject2foreamDefaultForm.control.dataobject2foream</business-key>
+                                <name>dataobject2foream</name>
+                                <description>DataObject2ForEAM form control</description>
+                                <data-element>object.dataobject2foream.element.dataobject2foream</data-element>
+                                <display-order>1</display-order>
+                                <label>DataObject2ForEAM</label>
+                            </text>
+                        </form-controls>
+                    </data-form>
+                </data-forms>
+                <data-views>
+                    <data-view>
+                        <business-key>object.dataobject2foream.view.dataobject2foreamDefaultView</business-key>
+                        <name>DataObject2ForEAM Default View</name>
+                        <description>DataObject2ForEAM Listing</description>
+                        <title>DataObject2ForEAM Listing</title>
+                        <default-view>true</default-view>
+                        <search-view>true</search-view>
+                        <data-view-elements>
+                            <data-view-element>
+                                <business-key>object.dataobject2foream.view.dataobject2foreamDefaultView.element.state</business-key>
+                                <name>State</name>
+                                <description>State column.</description>
+                                <data-element>object.dataobject2foream.element.state</data-element>
+                                <label>State</label>
+                                <responsivenessFactor>1</responsivenessFactor>
+                            </data-view-element>
+                            <data-view-element>
+                                <business-key>object.dataobject2foream.view.dataobject2foreamDefaultView.element.dataobject2foream</business-key>
+                                <name>dataobject2foream</name>
+                                <description>DataObject2ForEAM column.</description>
+                                <data-element>object.dataobject2foream.element.dataobject2foream</data-element>
+                                <display-order>1</display-order>
+                                <label>DataObject2ForEAM</label>
+                                <responsivenessFactor>1</responsivenessFactor>
+                            </data-view-element>
+                        </data-view-elements>
+                    </data-view>
+                </data-views>
+                <states>
+                    <state>
+                        <business-key>object.dataobject2foream.state.workflowstatewithleadingandtrailingspaces</business-key>
+                        <name> WorkflowStateWithLeadingAndTrailingSpaces </name>
+                        <description> WorkflowStateWithLeadingAndTrailingSpaces </description>
+                        <state-type>begin</state-type>
+                        <applied-changes>true</applied-changes>
+                        <transitions>
+                            <transition>
+                                <business-key>object.dataobject2foream.state.workflowstatewithleadingandtrailingspaces.transition.workflowtransitionwithleadingandtrailingspaces</business-key>
+                                <name> WorkflowTransitionWithLeadingAndTrailingSpaces </name>
+                                <description> WorkflowTransitionWithLeadingAndTrailingSpaces </description>
+                                <sequence>1</sequence>
+                                <next-state>object.dataobject2foream.state.lastState</next-state>
+                                <applied-changes>true</applied-changes>
+                                <transition-type>never transition</transition-type>
+                            </transition>
+                        </transitions>
+                    </state>
+                    <state>
+                        <business-key>object.dataobject2foream.state.lastState</business-key>
+                        <name>Last State</name>
+                        <description>Last State</description>
+                        <state-type>end</state-type>
+                        <applied-changes>true</applied-changes>
+                    </state>
+                </states>
+                <display-mappings>
+                    <display-mapping>
+                        <business-key>object.dataobject2foream.displayMapping.189</business-key>
+                        <name> DisplayMappingWithLeadingAndTrailingSpaces </name>
+                        <description> DisplayMappingWithLeadingAndTrailingSpaces </description>
+                        <process-data-object>object.dataobject2foream</process-data-object>
+                        <state>object.dataobject2foream.state.workflowstatewithleadingandtrailingspaces</state>
+                        <form>object.dataobject2foream.form.dataobject2foreamDefaultForm</form>
+                        <view>object.dataobject2foream.view.dataobject2foreamDefaultView</view>
+                        <role>role.administration</role>
+                        <evaluation-order>1</evaluation-order>
+                    </display-mapping>
+                </display-mappings>
+            </data-object>
+        </data-objects>
+        <packages>
+            <package>
+                <business-key>package.script.0d9f0893-eeb8-4904-9680-e63a9f871e84</business-key>
+                <name>Script</name>
+                <type>standard</type>
+            </package>
+        </packages>
+        <scripts>
+            <script>
+                <package>package.script.0d9f0893-eeb8-4904-9680-e63a9f871e84</package>
+                <business-key>script.transitionscript.760c513a-e0fc-4eea-9e7f-c9054130d90e</business-key>
+                <name>TransitionScript</name>
+                <description>TransitionScript</description>
+                <code>/**
+ *
+ * TransitionScript
+ *
+ * administrator 09/12/2017
+ **/
+
+package Script;
+
+import com.entellitrak.ApplicationException;
+import com.entellitrak.workflow.TransitionHandler;
+import com.entellitrak.WorkflowExecutionContext;
+
+public class TransitionScript implements TransitionHandler {
+
+    public boolean execute(WorkflowExecutionContext etk) throws ApplicationException {
+
+        // TODO
+
+        return false;
+    }
+
+}
+</code>
+                <type>java</type>
+                <handlerType>TransitionHandler</handlerType>
+            </script>
+            <script>
+                <package>package.script.0d9f0893-eeb8-4904-9680-e63a9f871e84</package>
+                <business-key>script.scriptobjectswithleadingandtrailingspaces.e2c011d2-adad-4e4d-8b20-924a7af99632</business-key>
+                <name> ScriptObjectsWithLeadingAndTrailingSpaces </name>
+                <description> ScriptObjectsWithLeadingAndTrailingSpaces </description>
+                <code>&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+    &lt;!--
+    &lt;link type="text/css" rel="stylesheet" href="page.resource.request.do?name=my.custom.StyleSheet"/>
+    &lt;script type="text/javascript" src="page.resource.request.do?name=my.custom.JavaScript">&lt;/script>
+    -->
+&lt;/head>
+&lt;body>
+&lt;/body>
+&lt;/html>
+</code>
+                <type>html</type>
+                <handlerType>None</handlerType>
+            </script>
+            <script>
+                <package>package.script.0d9f0893-eeb8-4904-9680-e63a9f871e84</package>
+                <business-key>script.page.cc8a3d60-8314-4a82-88fc-c47c1f1cd012</business-key>
+                <name>Page</name>
+                <description>Page</description>
+                <code>/**
+ *
+ * Page
+ *
+ * administrator 09/12/2017
+ **/
+
+package Script;
+
+import com.entellitrak.ApplicationException;
+import com.entellitrak.page.PageController;
+import com.entellitrak.page.Response;
+import com.entellitrak.PageExecutionContext;
+
+public class Page implements PageController {
+
+    public Response execute(PageExecutionContext etk) throws ApplicationException {
+
+        // TODO
+        return null;
+
+    }
+
+}
+</code>
+                <type>java</type>
+                <handlerType>PageController</handlerType>
+            </script>
+            <script>
+                <package>package.script.0d9f0893-eeb8-4904-9680-e63a9f871e84</package>
+                <business-key>script.eventscript.85579e19-f38b-4864-a9fa-a06162d098d2</business-key>
+                <name>EventScript</name>
+                <description>EventScript</description>
+                <code>/**
+ *
+ * EventScript
+ *
+ * administrator 09/12/2017
+ **/
+
+package Script;
+
+import com.entellitrak.ApplicationException;
+import com.entellitrak.system.UserEventHandler;
+import com.entellitrak.system.UserEventExecutionContext;
+
+public class EventScript implements UserEventHandler {
+
+    public void execute(UserEventExecutionContext etk) throws ApplicationException {
+
+        // TODO
+
+    }
+
+}
+</code>
+                <type>java</type>
+                <handlerType>UserEventHandler</handlerType>
+            </script>
+        </scripts>
+    </tracking-config>
+    <roles>
+        <role>
+            <name>Administrator</name>
+            <business-key>role.administration</business-key>
+            <description>Role with administration permissions.</description>
+            <profile/>
+            <system-permissions>
+                <permission>permission</permission>
+            </system-permissions>
+            <data-permissions/>
+        </role>
+    </roles>
+    <groups>
+        <group>
+            <name>System Administrators</name>
+            <business-key>group.systemAdministrators</business-key>
+            <description>Group of system administrators.</description>
+            <subject-roles/>
+            <subject-preferences/>
+        </group>
+    </groups>
+    <pages>
+        <page>
+            <name> StandardPagesWithLeadingAndTrailingSpaces </name>
+            <business-key>businessStandardPages</business-key>
+            <description> StandardPagesWithLeadingAndTrailingSpaces </description>
+            <controller-script-object-key>script.page.cc8a3d60-8314-4a82-88fc-c47c1f1cd012</controller-script-object-key>
+            <view-script-object-key>script.scriptobjectswithleadingandtrailingspaces.e2c011d2-adad-4e4d-8b20-924a7af99632</view-script-object-key>
+            <public-page>false</public-page>
+            <component-page>false</component-page>
+            <permissions/>
+        </page>
+    </pages>
+    <reports/>
+    <jobs>
+        <systemJob>
+            <job-type-key>etk.job.simple.workflow.archive</job-type-key>
+            <name>System Maintenance (Archive Workflows)</name>
+            <business-key>com.entellitrak.job.simpleArchiveSystemMaintenance</business-key>
+            <description>System maintenance job scheduled to be run every morning at 1:15am to archive Workflows</description>
+            <trigger-type>CronTrigger</trigger-type>
+            <cron-trigger-type>custom</cron-trigger-type>
+            <cron-trigger-expression>0 15 1 ? * *</cron-trigger-expression>
+            <active>true</active>
+            <suspend-on-error>false</suspend-on-error>
+            <application-definition>false</application-definition>
+        </systemJob>
+        <systemJob>
+            <job-type-key>etk.job.simple.workitem.cleanup</job-type-key>
+            <name>System Maintenance (Cleanup deleted Workflows)</name>
+            <business-key>com.entellitrak.job.simpleCleanupSystemMaintenance</business-key>
+            <description>System maintenance job scheduled to be run every Saturday morning at 1:30am to cleanup deleted Workflows</description>
+            <trigger-type>CronTrigger</trigger-type>
+            <cron-trigger-type>custom</cron-trigger-type>
+            <cron-trigger-expression>0 30 1 ? * SAT</cron-trigger-expression>
+            <active>true</active>
+            <suspend-on-error>false</suspend-on-error>
+            <application-definition>false</application-definition>
+        </systemJob>
+        <systemJob>
+            <job-type-key>etk.job.cfg.cleanup</job-type-key>
+            <name>System Maintenance (Remove Previous Configurations)</name>
+            <business-key>com.entellitrak.job.trackingConfigCleanup</business-key>
+            <description>System maintenance job scheduled to be run every morning at 2:00am to clean up previously deployed configurations</description>
+            <trigger-type>CronTrigger</trigger-type>
+            <cron-trigger-type>custom</cron-trigger-type>
+            <cron-trigger-expression>0 0 2 ? * *</cron-trigger-expression>
+            <active>true</active>
+            <suspend-on-error>false</suspend-on-error>
+            <application-definition>false</application-definition>
+        </systemJob>
+    </jobs>
+    <systemEventListeners>
+        <systemEventListener>
+            <name> SystemEventListenerWithLeadingAndTrailingSpaces </name>
+            <business-key>system event listener business key</business-key>
+            <description> system event listener description </description>
+            <system-event-type>On User Creation</system-event-type>
+            <script-object-key>script.eventscript.85579e19-f38b-4864-a9fa-a06162d098d2</script-object-key>
+            <active>true</active>
+            <application-definition>true</application-definition>
+        </systemEventListener>
+    </systemEventListeners>
+</applicationDefinition>
